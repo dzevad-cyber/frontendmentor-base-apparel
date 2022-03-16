@@ -1,3 +1,7 @@
+@use '../abstracts/typography' as tp;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
 *,
 *::after,
 *::before {
@@ -12,6 +16,9 @@ html {
 
 body {
   box-sizing: border-box;
+  font-family: tp.$ff-josefin-sans;
+  font-size: tp.$fz-base;
+  line-height: 1.6;
 }
 
 ul {
