@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./sass/style.scss" />
+    <script type="module" src="./index.ts"></script>
+
+    <title>Base Apparel coming soon page | Frontend Mentor</title>
+  </head>
+  <body>
+    <main class="container">
+      <article class="subscription">
+        <div class="subscription__logo">
+          <img src="./images/logo.svg" alt="base apparel logo" title="logo" />
+        </div>
+        <div class="subscription__hero">
+          <img
+            srcset="
+              ./images/hero-mobile.jpg  375w,
+              ./images/hero-desktop.jpg 610w
+            "
+            sizes="(min-width: 1000px) 610px, 375px"
+            src="./images/hero-desktop.jpg"
+            alt="picture of a woman"
+            title="hero image"
+          />
+        </div>
+        <h1 class="subscription__title">
+          <span>We're</span>
+          coming soon
+        </h1>
+        <p class="subscription__about">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form class="form-email">
+          <div>
+            <input
+              class="form-email__input"
+              type="email"
+              placeholder="  Email Address
+"
+            />
+
+            <button type="submit" class="form-email__submit">
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow button icon"
+                title="submit"
+              />
+            </button>
+          </div>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>
