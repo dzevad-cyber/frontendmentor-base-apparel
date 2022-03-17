@@ -1,0 +1,44 @@
+@use '../abstracts/typography' as tp;
+@use '../abstracts/colors' as clr;
+
+.form-email {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 40px;
+
+  &__input {
+    all: unset;
+    // grid-column: 1 / -1;
+    // grid-row: 1;
+
+    // padding: 2rem 2rem;
+    padding-left: 2rem;
+    // background-color: inherit;
+    // font-weight: tp.$fw-semi-bold;
+    // font-family: tp.$ff-josefin-sans;
+
+    // &::placeholder {
+    //   color: clr.$primary-100;
+    // }
+
+    // &:focus-visible {
+
+    //   // outline: 1px solid red;
+    //   // border: none;
+    // }
+  }
+
+  &__submit {
+    all: unset;
+    // grid-column: 2 / -1;
+    // grid-row: 1;
+    display: grid;
+    place-items: center;
+
+    background: clr.$gradient-200;
+    padding: 1rem 3rem;
+    border-radius: 40px;
+  }
+}

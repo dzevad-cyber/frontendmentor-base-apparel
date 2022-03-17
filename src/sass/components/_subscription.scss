@@ -1,0 +1,70 @@
+@use '../abstracts/colors' as clr;
+@use '../abstracts/typography' as tp;
+
+.subscription {
+  $padding-inline: 3rem;
+
+  max-width: 37.5rem;
+  // grid-template-rows: repeat(2, min-content) 1fr min-content 1fr;
+  grid-template-rows: repeat(5, min-content);
+
+  display: grid;
+  background: lighten($color: #f8bfbf, $amount: 10%);
+
+  &__logo {
+    background: clr.$gradient-100;
+    padding: 2rem $padding-inline;
+
+    & > img {
+      width: 35%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__hero {
+    height: 40vh;
+    overflow: hidden;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 47% 20%;
+    }
+  }
+
+  &__title {
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    justify-items: center;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    padding-top: 5rem;
+    font-size: tp.$fz-title;
+
+    &--top {
+      font-weight: tp.$fw-light;
+      color: clr.$primary-100;
+    }
+
+    &--center,
+    &--bottom {
+      font-weight: tp.$fw-semi-bold;
+    }
+  }
+
+  &__about {
+    color: clr.$primary-100;
+    padding: 0 $padding-inline;
+    text-align: center;
+    font-size: tp.$fz-mobile;
+    padding-top: 2rem;
+  }
+
+  &__form-email {
+    padding: 5rem $padding-inline;
+  }
+}
