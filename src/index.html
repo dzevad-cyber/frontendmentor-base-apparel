@@ -45,20 +45,31 @@
         </p>
         <div class="subscription__form-email">
           <form class="form-email">
-            <input
-              class="form-email__input"
-              type="email"
-              placeholder="Email Address"
-              name="email"
-            />
-
-            <button type="submit" class="form-email__submit">
-              <img
-                src="./images/icon-arrow.svg"
-                alt="arrow button icon"
-                title="submit"
+            <div class="form-email__content">
+              <input
+                class="form-email__input"
+                type="email"
+                placeholder="Email Address"
+                name="email"
               />
-            </button>
+              <span class="form-email__error">
+                <img
+                  src="./images/icon-error.svg"
+                  alt="exlamation point"
+                  title="error"
+                />
+              </span>
+              <button type="submit" class="form-email__submit">
+                <img
+                  src="./images/icon-arrow.svg"
+                  alt="arrow button icon"
+                  title="submit"
+                />
+              </button>
+            </div>
+            <span class="form-email__error-text"
+              >Please provide valid email</span
+            >
           </form>
         </div>
       </article>
