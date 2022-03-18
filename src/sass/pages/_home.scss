@@ -4,4 +4,10 @@
 
   display: grid;
   justify-content: center;
+
+  background-color: whitesmoke;
+
+  @media (min-width: 62.6em) {
+    place-content: center;
+  }
 }

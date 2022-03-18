@@ -43,11 +43,16 @@
     border-radius: 40px;
   }
 
-  &__error {
+  &__error-icon {
     display: grid;
     align-items: center;
     visibility: hidden;
     opacity: 0;
+
+    & > img {
+      width: 15px;
+      height: 15px;
+    }
   }
 
   &__error-text {

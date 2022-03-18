@@ -2,7 +2,7 @@ import email from 'email-validator';
 
 const formEmail = document.querySelector('.form-email')! as HTMLFormElement;
 const errorIcon = document.querySelector(
-  '.form-email__error'
+  '.form-email__error-icon'
 )! as HTMLSpanElement;
 const errorText = document.querySelector(
   '.form-email__error-text'
